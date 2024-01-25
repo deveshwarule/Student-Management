@@ -7,5 +7,8 @@ from .import Views,HODViews,StudentViews,StaffViews
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('base/',Views.BASE,name='base'),
+    #login path
+    path('login/',Views.LOGIN,name='login'),
+
     
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
